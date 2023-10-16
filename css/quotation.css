@@ -1,0 +1,51 @@
+.hidden {
+  display: none;
+}
+.contactform {
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(var(--blueRGB), var(--o));
+  border-radius: 4px;
+  border: transparent;
+  padding: 20px 20px;
+  margin-bottom: 50px;
+}
+.form-check {
+  display: inline;
+  padding-right: 1.25rem;
+}
+.form-label, .form-check-label {
+  color: white;
+  /* color: rgba(var(--white)); */
+}
+.form-control {
+  border-radius: 4px;
+  border: rgba(var(--white));
+}
+.form-control:focus {
+  border: 1px solid #55bdb2;
+  box-shadow: 0 0 5px #2d6b65;
+}
+textarea.form-control {
+  min-height: 100px;
+}
+
+.form-check-input:checked {
+  background-color: rgba(var(--blueRGB));
+  border-color: rgba(var(--blueRGB));
+}
+.btn-check:checked+.btn {
+  color: rgba(var(--blueRGB));
+}
+.btn-light {
+  color: rgba(var(--blueRGB), var(--o));
+  border-color: white;
+  background-color: white;
+  border-radius: 50rem;
+}
+
+.btn-light:hover {
+  color: white;
+  border-color: white;
+  background-color: rgba(var(--blueRGB), var(--o));
+}

@@ -1,0 +1,72 @@
+.servpagedescription {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+.calltoaction {
+  width: fit-content;
+  margin: 30px auto;
+  margin-bottom: 40px;
+}
+.calltoaction a {
+  color:var(--white);
+  border-color: var(--blue);
+  background-color: var(--blue);
+  font-size: 20px;
+  box-shadow: 5px 5px 5px lightblue;
+}
+.calltoaction a:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+  background-color: var(--white);
+}
+.nav-tabs .nav-link.active {
+  color: var(--white);
+  text-shadow: 1px 1px 2px var(--blue);
+  /* background-color: darken(var(--blue),5); */
+  background-color: rgba(var(--blueRGB), 0.7);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: transparent;
+}
+#home-tab, #profile-tab, #contact-tab {
+  font-size: 22px;
+  /* text-shadow: 1px 1px 2px var(--white); */
+}
+
+.nav-tabs .nav-link {
+  color: var(--blue);
+  background-color: var(--white);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  /* border: transparent; */
+  /* border: white; */
+}
+.tab-pane.fade li {
+  color: var(--white);
+}
+.tab-pane.fade.show.active {
+  color: var(--white);
+  background-color: rgba(var(--blueRGB), 0.7);
+  /* background-color: darken($blue,5); */
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  padding-top: 20px;
+  margin-bottom: 100px;
+  padding-right: 10px;
+}
+.tab-pane.fade.show.active li {
+  list-style: none;
+  color: var(--white);
+  line-height: 50px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(var(--blueRGB));
+}
+.folder {
+  width: fit-content;
+  margin: 0 auto;
+}
+.nav-tabs {
+  /* border: transparent; */
+}

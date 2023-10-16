@@ -1,0 +1,12 @@
+.navbar-mlc {
+  background: rgba(var(--blueRGB), var(--o));
+}
+.navbar-mlc .navbar-brand img {
+  width: 70px;
+}
+#includedNavbar > div > div > a {
+  padding: 0;
+}
+#includedNavbar > div > button:focus {
+  outline: 1px auto rgba(255, 255, 255, 0.2);
+}
