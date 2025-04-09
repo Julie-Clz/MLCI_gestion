@@ -182,8 +182,12 @@ if (isset($_POST['texte'])) {
     
     $retour = mail('julie_clz@hotmail.fr', 'Demande de devis', $message, $entete);
     // $retour = mail('contact@mlci-gestion.fr', 'Demande de devis', $message, $entete);
-    if($retour)
-    echo '<script>alert("Merci, votre demande a bien été Merci, votre demande a bien été envoyée. Nous reviendrons vers vous le plus vite possible.")</script>';
+    if($retour) {
+      echo '<script>alert("Merci, votre demande a bien été Merci, votre demande a bien été envoyée. Nous reviendrons vers vous le plus vite possible.")</script>';
+    } else {
+      echo '<script>alert("Erreur")</script>';
+    }
+   
 }
 ?>
         
