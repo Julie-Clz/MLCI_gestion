@@ -2,7 +2,8 @@
 if (isset($_POST['texte'])) {
     $entete  = 'MIME-Version: 1.0' . "\r\n";
     $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-    $entete .= 'From: contact@mlci-gestion.fr' . "\r\n";
+    // $entete .= 'From: contact@mlci-gestion.fr' . "\r\n";
+    $entete .= 'From: julie_clz@hotmail.fr' . "\r\n";
     $entete .= 'Reply-to: ' . $_POST['email'];
     
     if ($_POST['checkboxTel'] === 'on' ) {
@@ -33,7 +34,8 @@ if (isset($_POST['texte'])) {
     <p><b>Objet : </b>' $devis '<br>
     <b>Message : </b>' . htmlspecialchars($_POST['texte']) . '</p>';
     
-    $retour = mail('contact@mlci-gestion.fr', 'Demande de devis', $message, $entete);
+    $retour = mail('julie_clz@hotmail.fr', 'Demande de devis', $message, $entete);
+    // $retour = mail('contact@mlci-gestion.fr', 'Demande de devis', $message, $entete);
     if($retour)
     echo '<script>alert("Merci, votre demande a bien été Merci, votre demande a bien été envoyée. Nous reviendrons vers vous le plus vite possible.")</script>';
 }

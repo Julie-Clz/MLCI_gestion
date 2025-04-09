@@ -64,7 +64,7 @@
     <br>
     
     <div class="contactform">
-      <form>
+      <form method="post">
         <div class="d-flex flex-row justify-content-between">
           <div class="mb-3">
             <label for="first_name" class="form-label">Prénom</label>
@@ -140,6 +140,9 @@
           <button type="submit" class="btn-light" value="envoyer">Envoyer</button>
         </div>
        <!-- SCRIPT PHP MAIL -->
+       <?php
+       require("mail.php");
+       ?>
         
       </form>  
       
