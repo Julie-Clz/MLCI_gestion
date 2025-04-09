@@ -34,8 +34,8 @@ if (isset($_POST['texte'])) {
     <p><b>Objet : </b>' $devis '<br>
     <b>Message : </b>' . htmlspecialchars($_POST['texte']) . '</p>';
     
-    $retour = mail('julie_clz@hotmail.fr', 'Demande de devis', $message, $entete);
-    // $retour = mail('contact@mlci-gestion.fr', 'Demande de devis', $message, $entete);
+    // $retour = mail('julie_clz@hotmail.fr', 'Demande de devis', $message, $entete);
+    $retour = mail('contact@mlci-gestion.fr', 'Demande de devis', $message, $entete);
     if($retour)
     echo '<script>alert("Merci, votre demande a bien été Merci, votre demande a bien été envoyée. Nous reviendrons vers vous le plus vite possible.")</script>';
 }
